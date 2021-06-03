@@ -1,0 +1,19 @@
+.card {
+    @apply box-border;
+    @apply h-48;
+    @apply w-48;
+    @apply p-2;
+    @apply border-2;
+    @apply border-green-100;
+    @apply shadow-lg;
+}
+
+i.fa.fa-trash {
+  @apply absolute; @apply top-0; @apply right-0; @apply hidden;
+}
+
+:hover i.fa.fa-trash {
+  @apply inline-block;
+}
+
+

@@ -1,0 +1,11 @@
+.button {
+    @apply border-2;
+    @apply h-8;
+    @apply w-16;
+    @apply rounded-md;
+    @apply border-green-100;
+    @apply bg-green-200;
+    @apply text-sm;
+    @apply text-white;
+    @apply font-bold;
+}

@@ -1,0 +1,16 @@
+
+<div class="board">
+<div *ngFor="let card of cards; index as i">
+    <app-card [card]="card">
+    <form>
+    <input #input inputRef class="w-5/6 border-green-100 rounded-md focus:border-green-400 my-2"
+         type="text" [disabled]="disabled" />
+      <i class="fa fa-edit align-top" toggleEdit (click)="onClick(i)"></i>
+      <select class="w-5/6 border-green-100 rounded-md my-2 focus:border-green-400" name="status"
+        [(ngModel)]="card.status">
+        <option class="bg-opacity-40" *ngFor="let item of items;" [selected]="item.status == card.status">{{item.status}}</option>
+      </select>
+    </form>
+    </app-card>
+</div>
+</div>

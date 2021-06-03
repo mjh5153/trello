@@ -1,0 +1,15 @@
+:host ::ng-deep .board {
+  @apply flex;
+  @apply flex-wrap;
+  @apply justify-between;
+  @apply justify-center;
+  @apply px-8;
+  @apply py-8;
+  @apply gap-y-8;
+}
+
+// .board > *:not(:last-child) {
+//   @apply mr-8;
+// }
+//input edit logic
+

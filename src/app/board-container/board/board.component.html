@@ -1,0 +1,15 @@
+
+<div class="flex space-y-8 divide-x divide-green-300 mb-32">
+
+<div class="ml-8 mr-16 mt-8">
+  <div class="py-4">Trello</div>
+  <button class="button hover:shadow-xl" ng-click="createCard();">Create</button>
+</div>
+    <div *ngFor="let column of board.columns;" class="flex-grow h-screen">
+      <div class="flex flex-col">
+        <div class="text-center"><span>{{column}}</span>
+          <app-card-container></app-card-container>
+      </div>
+  </div>
+
+</div>
